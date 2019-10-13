@@ -1,5 +1,8 @@
 README
 
+Ceci permet de créer une image docker à partir de gcr.io pas docker hub
+et de créer un container sur GCP
+
 Il faut installer ce qui suit et avoir un projet sur GCP
 Docker
 gcloud
@@ -7,11 +10,6 @@ go
 
 modifier le répertoire du code source dans dockerfile et buildcontainer.sh
 
-Le Dockerfile sert a generer l'image en local 
-docker build . -t my-golang-app-image 
-
-pour tester l'image généré lancer dans un terminal
-docker run -p 3030:3001 -it -rm -name my-golang-app-run hellogcp
 
 
 Modifier Dockerfile pour mentionner le répertoire WORKDIR dans lequel se trouve le code
